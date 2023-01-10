@@ -1,0 +1,16 @@
+domain: apiextensions.k8s.io
+layout:
+- go.kubebuilder.io/v3
+projectName: exporter
+repo: github.com/jayanthvn/exporter
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: apiextensions.k8s.io
+  group: bpfexporterconfig.crd.k8s.test.com
+  kind: BPFexporterConfig
+  path: github.com/jayanthvn/exporter/api/v1
+  version: v1
+version: "3"
